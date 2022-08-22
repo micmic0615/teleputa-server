@@ -20,6 +20,9 @@ function broadcast(msg) {       // (4)
         }
     }
 }
-server.listen(3000, () => {
-    console.log(`server listening...`);
+
+let herokuPort = process.env.PORT || 80;
+
+server.listen(herokuPort, () => {
+    console.log(`server listening... ${herokuPort}`);
 })
