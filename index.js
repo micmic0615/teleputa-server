@@ -20,6 +20,6 @@ function broadcast(msg) {       // (4)
         }
     }
 }
-server.listen(process.argv[2] || 8080, () => {
+server.listen(3000, () => {
     console.log(`server listening...`);
 })
